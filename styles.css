@@ -48,7 +48,7 @@ a:hover {color: #1710ec;}
     z-index: 1;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
     .whitish {
 	width: 100%;
 	transform: translate(
