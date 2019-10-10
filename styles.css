@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    
+    /* The image used */
+    background-image: url("imgs/bkg.jpg");
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+    /* Half height */
+    /*height: 100vh;*/
+    
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+a {color: #000000;}
+a:hover {color: #1710ec;}
+
+.whitish {
+    height: 100%;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: auto;
+    position: absolute;
+    transform: translate(
+    16.5%,
+    0%
+    );
+    z-index: 2;
+}
+
+.blur {
+    background: inherit;
+    height: 100%; /* h */
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    transform: translate(
+    16.5%,
+    0%
+    ); /* - [cl - (cw/2)] % ,  -[ct - (ch/2)] %*/
+    filter: blur(20px);
+    z-index: 1;
+}
+
+@media (max-width: 570px) {
+    .container {
+	width: 90%;
+	transform: translate(
+	    16.5%,
+	    0%
+	);
+    }
+
+    .blur {
+	width: 90%;
+	transform: translate(
+	    16.5%,
+	    0%
+	); /* - [cl - (cw/2)] % ,  -[ct - (ch/2)] %*/
+    }
+}
